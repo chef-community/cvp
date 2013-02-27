@@ -11,8 +11,15 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+.DS_Store
 
 # YARD artifacts
 .yardoc
 _yardoc
 doc/
+
+# Ignore the build directory
+/build
+
+# Ignore Sass' cache
+/.sass-cache
