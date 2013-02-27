@@ -141,6 +141,6 @@ Libraries contain arbitrary Ruby code, so changes to libraries are governed by t
 ---
 ### Notes:
 
-<a id="1">1. The "reasonable use" restriction is intended to exclude things like [chef-rewind](https://github.com/bryanwb/chef-rewind), which effectively turns the entire cookbook into a public API.</a>
+<a id="1">1.</a> The "reasonable use" restriction is intended to exclude things like [chef-rewind](https://github.com/bryanwb/chef-rewind), which effectively turns the entire cookbook into a public API.
 
-<a id="2">2. Ruby does little to enforce separation of API from implementation. As a result, the determination of a library's API becomes a matter of intent. For example, a private method defined in a library class can be called from outside the cookbook by reopening the class. But by defining the method as private, the cookbook intended it not to be part of the API, so a change to the method would only require a patch change to the cookbook's version.</a>
+<a id="2">2.</a> Ruby does little to enforce separation of API from implementation. As a result, the determination of a library's API becomes a matter of intent. For example, a private method defined in a library class can be called from outside the cookbook by reopening the class. But by defining the method as private, the cookbook intended it not to be part of the API, so a change to the method would only require a patch change to the cookbook's version.
